@@ -10,17 +10,17 @@ function UserDetails(props) {
 
   return (
     <div>
-      <h2 id="title" className="text-center table-title">Joe Biden Staff Members Directory</h2>
+      <h2 id="title" className="text-center table-title">Joe Biden Cabinet</h2>
       {firstUser.length > 0 ? (
         <table className="table table-bordered table-sm" id="table">
           <thead>
             <tr>
-              <th scope="col" onClick={() => props.sortBy("first")}> Name of the Staff Member <i class="fa fa-sort" aria-hidden="true"></i></th>
-              <th scope="col" onClick={() => props.sortBy("last")}> Position in the White House <i class="fa fa-sort" aria-hidden="true"></i></th>
+              <th scope="col" onClick={() => props.sortBy("first")}> Cabinet Member <i class="fa fa-sort" aria-hidden="true"></i></th>
+              <th scope="col" onClick={() => props.sortBy("last")}> Position in the Administration <i class="fa fa-sort" aria-hidden="true"></i></th>
               <th scope="col" >Email Address </th>
               <th scope="col">Date of Birth</th>
-              <th scope="col">Cell Phone</th>
-              <th scope="col" >Personal Photo</th>
+              <th scope="col">Phone Number</th>
+              <th scope="col" >Photo</th>
 
             </tr>
           </thead>
