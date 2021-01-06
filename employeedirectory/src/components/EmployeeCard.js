@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Body from "./Body";
 import Row from "./Row";
 import Col from "./Col";
-import Navigation from "./Navigation";
+import Navigation from "./navigation";
 import UserDetails from "./UserDetails";
 import Directory from "../data/directory.json";
 

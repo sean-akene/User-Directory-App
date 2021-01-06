@@ -1,12 +1,14 @@
+
 import React from "react";
-import { render, screen } from "@testing-library/react";
-import App from "./App";
 
-test("renders learn react link", () => {
-  render(<App/>);
-  let linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+function Col(props) {
+  const size = props.size.split(" ").map(size => "col-" + size).join(" ");
 
-// eslint-disable-next-line no-undef
+  return (
+    <div className={size}>
+      {props.children}
+    </div>
+  );
+}
+
 export default Col;
